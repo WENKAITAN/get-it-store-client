@@ -69,9 +69,9 @@ class CartItem extends React.Component {
                             <option value="xxl">xxl</option>
                         </select>
 
-                        <input className="media-quantity" style={{width:"45px" ,height:"30px"}} type="number" onChange={(e) => this.handleChange(e)} value={item.quantity} name="quantity" min="1" />
+                        <input className="media-quantity" style={{width:"45px" ,height:"30px", marginRight:"5px"}} type="number" onChange={(e) => this.handleChange(e)} value={item.quantity} name="quantity" min="1" />
                     <div className="media-remove">
-                        <Button style={{marginLeft: "10px"}}onClick={(e) => this.removeItem(e)} size="sm" > remove </Button>
+                        <Button style={{ marginRight: "20px"}}onClick={(e) => this.removeItem(e)} size="sm" > remove </Button>
                     </div>
                     </div>
                 </Col>

@@ -59,7 +59,7 @@ class CartItem extends React.Component {
                     <Card.Title className="cartTitle" ><b>{item['name']}</b></Card.Title>
                     
                     <div style={{display:"flex"}}>
-                        <select style={{width:"45px" ,height:"25px"}} value={item.size} onChange = {(e) => this.updateSize(e)} name="size">
+                        <select style={{width:"70px" ,height:"30px", marginRight:"5px"}} value={item.size} onChange = {(e) => this.updateSize(e)} name="size">
                             <option value="xxs">xxs</option>
                             <option value="xs">xs</option>
                             <option value="s">s</option>
@@ -69,9 +69,9 @@ class CartItem extends React.Component {
                             <option value="xxl">xxl</option>
                         </select>
 
-                        <input class="media-quantity" style={{width:"45px" ,height:"25px"}} type="number" onChange={(e) => this.handleChange(e)} value={item.quantity} name="quantity" min="1" />
-                    <div class="media-remove">
-                        <Button onClick={(e) => this.removeItem(e)} > remove </Button>
+                        <input className="media-quantity" style={{width:"45px" ,height:"30px"}} type="number" onChange={(e) => this.handleChange(e)} value={item.quantity} name="quantity" min="1" />
+                    <div className="media-remove">
+                        <Button style={{marginLeft: "10px"}}onClick={(e) => this.removeItem(e)} size="sm" > remove </Button>
                     </div>
                     </div>
                 </Col>

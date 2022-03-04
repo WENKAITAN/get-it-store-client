@@ -28,7 +28,7 @@ function Cart ( {itemdelete, updateQuantity} ) {
           })
     }
     return(
-        <Container ClassName="carttesting">
+        <Container className="carttesting">
             
             <Row className="horizontal">
                 

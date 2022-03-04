@@ -70,7 +70,7 @@ class CartItem extends React.Component {
                         </select>
 
                         <input className="media-quantity" style={{width:"45px" ,height:"30px", marginRight:"5px"}} type="number" onChange={(e) => this.handleChange(e)} value={item.quantity} name="quantity" min="1" />
-                    <div className="media-remove">
+                    <div>
                         <Button style={{ marginRight: "20px"}}onClick={(e) => this.removeItem(e)} size="sm" > remove </Button>
                     </div>
                     </div>

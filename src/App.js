@@ -18,6 +18,7 @@ import Account from './components/Account';
 import PrivateRoute from './components/PrivateRoute';
 import Success from './components/Success';
 import Cancel from './components/Cancel';
+import logo from './images/logo.png'
 class App extends React.Component {
 
   state = {
@@ -91,8 +92,32 @@ class App extends React.Component {
             <Navigation items={items} cart={cart}/>
             <Switch>
               <Route exact path="/" render={(props) => (
-                  <div>
-                      <div className="header"></div>
+                  <div className="c-wrapper">
+                      {/* <div className="header"></div> */}
+                      <div id="carouselSlide" className="carousel slide z-depth-1-half" data-ride="carousel">
+                        <div className="carousel-inner">
+                          <div className="carousel-item active">
+                            <img className="d-block w-100" src={logo} alt="First slide" />
+                          </div>
+                          <div className="carousel-item">
+                            <img className="d-block w-100" src="https://cdn.shopify.com/s/files/1/0133/1907/7947/products/MASCOTHACKYSACK_DETAIL_900x.jpg?v=1623200262/" alt="First slide" />
+                          </div>
+                          <div className="carousel-item">
+                            <img className="d-block w-100" src="https://cdn.shopify.com/s/files/1/0133/1907/7947/products/DENIM-07_1_1_900x.jpg?v=1634171742" alt="Second slide" />
+                          </div>
+                          <div className="carousel-item">
+                            <img className="d-block w-100" src="https://cdn.shopify.com/s/files/1/0133/1907/7947/products/DENIM-13_1_1_900x.jpg?v=1634264666" alt="Third slide" />
+                          </div>
+                        </div>
+                        <a className="carousel-control-prev" href="#carouselSlide" role="button" data-slide="prev">
+                          <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span className="sr-only">Previous</span>
+                        </a>
+                        <a className="carousel-control-next" href="#carouselSlide" role="button" data-slide="next">
+                          <span className="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span className="sr-only">Next</span>
+                        </a>
+                    </div>
                       <ItemList {...props} items={items} />
                   </div>
                 )} 
@@ -128,3 +153,4 @@ class App extends React.Component {
 
 
 export default App;
+

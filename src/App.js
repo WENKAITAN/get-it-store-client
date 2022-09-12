@@ -97,16 +97,16 @@ class App extends React.Component {
                       <div id="carouselSlide" className="carousel slide z-depth-1-half" data-ride="carousel">
                         <div className="carousel-inner">
                           <div className="carousel-item active">
-                            <img className="d-block w-100" src={logo} alt="First slide" />
+                            <img className="d-block w-100" style={{  objectFit: "contain" }} src={logo} alt="First slide" />
+                          </div>
+                          <div className="carousel-item" >
+                            <img className="d-block w-100" style={{ objectFit: "contain" }} src="https://cdn.shopify.com/s/files/1/0133/1907/7947/products/MASCOTHACKYSACK_DETAIL_900x.jpg?v=1623200262/" alt="First slide" />
+                          </div>
+                          <div className="carousel-item" >
+                            <img className="d-block w-100" style={{ objectFit: "contain" }} src="https://cdn.shopify.com/s/files/1/0133/1907/7947/products/DENIM-07_1_1_900x.jpg?v=1634171742" alt="Second slide" />
                           </div>
                           <div className="carousel-item">
-                            <img className="d-block w-100" src="https://cdn.shopify.com/s/files/1/0133/1907/7947/products/MASCOTHACKYSACK_DETAIL_900x.jpg?v=1623200262/" alt="First slide" />
-                          </div>
-                          <div className="carousel-item">
-                            <img className="d-block w-100" src="https://cdn.shopify.com/s/files/1/0133/1907/7947/products/DENIM-07_1_1_900x.jpg?v=1634171742" alt="Second slide" />
-                          </div>
-                          <div className="carousel-item">
-                            <img className="d-block w-100" src="https://cdn.shopify.com/s/files/1/0133/1907/7947/products/DENIM-13_1_1_900x.jpg?v=1634264666" alt="Third slide" />
+                            <img className="d-block w-100" style={{ objectFit: "contain" }}src="https://cdn.shopify.com/s/files/1/0133/1907/7947/products/DENIM-13_1_1_900x.jpg?v=1634264666" alt="Third slide" />
                           </div>
                         </div>
                         <a className="carousel-control-prev" href="#carouselSlide" role="button" data-slide="prev">

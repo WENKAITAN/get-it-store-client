@@ -6,7 +6,7 @@ The code in this directory was initialized with [create-react-app](https://creat
 
 ## Running the client
 
-> make sure you're in the `/client` folder when running the following commands
+> make sure you're in the root when running the following commands
 
 ```
 npm install
